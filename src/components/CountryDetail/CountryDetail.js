@@ -26,15 +26,6 @@ export default class CountryDetail extends Component {
                 console.log(this.state.country);
             });
     }
-
-    getBorderByCode = (code) => {
-        fetch(`https://restcountries.eu/rest/v2/alpha/${code}`)
-            .then(res => res.json())
-            .then(data => {
-                return data.name;
-            });
-    }
-
     render() {
         const country = this.state.country;
         return (
@@ -61,7 +52,7 @@ export default class CountryDetail extends Component {
 
                                             {country.borders && country.borders.length != 0 ? country.borders.map(border => (
                                                 <div className={styles.tag}>
-                                                    <li key={border} className={styles.borderTag}><Link to={`/countries/${border}`}>{border ? this.getBorderByCode(border) : <p>None</p>}</Link></li>
+                                                    <li key={border} className={styles.borderTag}><Link to={`/countries/${border}`}>{border}</Link></li>
                                                 </div>
                                             )) : <p>None</p>}
 
