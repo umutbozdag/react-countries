@@ -1,0 +1,47 @@
+.countryCard {
+  border-radius: 4px;
+  width: 300px;
+  margin: 0 48px 48px 48px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  padding-bottom: 48px;
+}
+
+.countryCard:hover {
+  transform: scale(1.02);
+  transition: all 0.2s linear;
+}
+
+.countryImg {
+  margin-bottom: 12px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.countryName,
+p {
+  padding: 4px 16px;
+  margin-bottom: -12px;
+}
+
+@media only screen and (max-width: 550px) {
+  .countryCard {
+    width: 350px;
+    margin: 0 0 32px 0;
+  }
+
+  .countryImg {
+    width: 350px;
+    height: 190px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .countryCard {
+    width: 300px;
+  }
+
+  .countryImg {
+    width: 300px;
+  }
+}

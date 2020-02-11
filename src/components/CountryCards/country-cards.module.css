@@ -1,0 +1,29 @@
+.countryCards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  margin: 0 128px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    margin: 0;
+  }
+}

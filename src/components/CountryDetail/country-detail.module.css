@@ -1,0 +1,155 @@
+.countryDetail {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.backIcon {
+  margin-right: 12px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  margin-top: 8%;
+}
+
+.countryFlag {
+  margin-top: 64px;
+  width: 700px;
+}
+
+.row {
+  margin-left: 64px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.countryName {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.tags {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    flex-wrap: nowrap;
+    height: 200vh;
+  }
+
+  .left {
+    height: 0;
+  }
+
+  .right {
+    margin-top: 80px;
+  }
+  .countryFlag {
+    margin-top: 0;
+    width: 600px;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .tags {
+    width: 500px;
+  }
+  .container {
+    flex-wrap: wrap;
+    height: 165vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    height: 160vh;
+    justify-content: flex-start;
+  }
+
+  .backButton {
+    margin-left: 64px;
+  }
+
+  .countryFlag {
+    width: 600px;
+    margin-left: 64px;
+  }
+
+  .row {
+    margin-left: 48px;
+  }
+
+  .tags {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container {
+    flex-wrap: wrap;
+    height: 140vh;
+    justify-content: flex-start;
+  }
+  .countryFlag {
+    width: 370px;
+    margin-left: 24px;
+  }
+
+  .row {
+    margin-left: 24px;
+  }
+
+  .right {
+    margin-top: -64;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .row {
+    margin-left: 12px;
+  }
+
+  .tags {
+    width: 100%;
+  }
+  .container {
+    flex-wrap: wrap;
+    height: 130vh;
+    justify-content: flex-start;
+  }
+  .countryFlag {
+    width: 320px;
+    margin-left: 24px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
+    flex-wrap: wrap;
+    height: 130vh;
+    justify-content: flex-start;
+  }
+  .countryFlag {
+    width: 280px;
+    margin-left: 24px;
+  }
+}

@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+:root {
+  font-family: "Nunito Sans", sans-serif;
+  --light-input: hsl(0, 0%, 52%);
+  --light-text: hsl(200, 15%, 8%);
+  --light-background: hsl(0, 0%, 98%);
+  --light-elements: hsl(0, 0%, 100%);
+  --dark-elements: hsl(209, 23%, 22%);
+  --dark-background: hsl(207, 26%, 17%);
+  --dark-text: hsl(0, 0%, 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.light-mode {
+  background: var(--light-background);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.light-mode a {
+  color: var(--light-text);
 }
 
-.App-link {
-  color: #61dafb;
+.dark-mode {
+  background: var(--dark-background);
+  color: var(--dark-text) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark-mode a {
+  color: var(--dark-text);
+}
+
+.dark-mode button {
+  color: var(--dark-text);
+}
+
+.dark-mode .backButton:hover {
+  background: var(--dark-elements);
+}
+
+.dark-mode option {
+  color: var(--dark-text);
+  background: var(--dark-background);
+}
+
+.dark-mode select {
+  background: var(--dark-background);
+  color: var(--dark-text);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode ::placeholder {
+  color: var(--dark-text);
+}
+
+.dark-mode input {
+  color: var(--dark-text);
+}
+
+.dark-mode i {
+  font-weight: 800;
+}
+
+.dark-mode .backButton:hover,
+.dark-mode li:hover {
+  background: var(--dark-elements);
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  font-weight: 600;
+}
+
+ul {
+  padding: 0;
 }
